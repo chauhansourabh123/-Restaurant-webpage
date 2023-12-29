@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+</head>
+
+<body>
+    <button id="height">Height</button>
+    <button id="width">width</button>
+
+    <a id="google">Google</a>
+
+
+    <script>
+        let mywindow;
+        document.getElementById('height').addEventListener('click', () => {
+           console.log(window.navigator.javaEnabled());
+        })
+        document.getElementById('width').addEventListener('click', () => {
+            console.log(screen.availWidth);
+        })
+    </script>
+</body>
+
+</html>
